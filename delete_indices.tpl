@@ -26,6 +26,6 @@ actions:
       source: name
       direction: older
       timestring: '%Y.%m.%d'
-      unit: days
-      unit_count: $ELASTICSEARCH_CLEANUP_OLDER_THAN_IN_DAYS
+      unit: $ELASTICSEARCH_CLEANUP_OLDER_THAN_UNIT
+      unit_count: $ELASTICSEARCH_CLEANUP_OLDER_THAN_UNIT_COUNT
       exclude:
