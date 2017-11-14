@@ -9,7 +9,7 @@ actions:
   1:
     action: delete_indices
     description: >-
-      Delete indices older than 45 days (based on index name), for logstash-
+      Delete indices older than $ELASTICSEARCH_CLEANUP_OLDER_THAN_UNIT_COUNT $ELASTICSEARCH_CLEANUP_OLDER_THAN_UNIT (based on index name), for $ELASTICSEARCH_CLEANUP_INDICES_PREFIX
       prefixed indices. Ignore the error if the filter does not result in an
       actionable list of indices (ignore_empty_list) and exit cleanly.
     options:
